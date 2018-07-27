@@ -1,0 +1,172 @@
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>LoginApplication</groupId>
+  <artifactId>LoginApplication</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.0.0</version>
+        <configuration>
+          <warSourceDirectory>WebContent</warSourceDirectory>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies xmlns="">
+
+
+	<dependency>
+		<groupId>antlr</groupId>
+		<artifactId>antlr</artifactId>
+		<version>2.7.7</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/WebContent/WEB-INF/lib/antlr-2.7.7.jar</systemPath>
+	</dependency>
+
+
+	<dependency>
+		<groupId>asm-debug-all</groupId>
+		<artifactId>asm-debug-all</artifactId>
+		<version>5.0.2</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/WebContent/WEB-INF/lib/asm-debug-all-5.0.2.jar</systemPath>
+	</dependency>
+
+
+	<dependency>
+		<groupId>asm-debug-all</groupId>
+		<artifactId>asm-debug-all</artifactId>
+		<version>5.0.4</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/WebContent/WEB-INF/lib/asm-debug-all-5.0.4.jar</systemPath>
+	</dependency>
+
+
+	<dependency>
+		<groupId>bson</groupId>
+		<artifactId>bson</artifactId>
+		<version>3.0.2</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/WebContent/WEB-INF/lib/bson-3.0.2.jar</systemPath>
+	</dependency>
+
+
+	<dependency>
+		<groupId>gson</groupId>
+		<artifactId>gson</artifactId>
+		<version>2.2.2</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/WebContent/WEB-INF/lib/gson-2.2.2.jar</systemPath>
+	</dependency>
+
+
+	<dependency>
+		<groupId>javax.json</groupId>
+		<artifactId>javax.json</artifactId>
+		<version>1.0.4</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/WebContent/WEB-INF/lib/javax.json-1.0.4.jar</systemPath>
+	</dependency>
+
+
+	<dependency>
+		<groupId>javax.servlet-api</groupId>
+		<artifactId>javax.servlet-api</artifactId>
+		<version>3.0.1</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/WebContent/WEB-INF/lib/javax.servlet-api-3.0.1.jar</systemPath>
+	</dependency>
+
+
+	<dependency>
+		<groupId>javax.ws.rs-api</groupId>
+		<artifactId>javax.ws.rs-api</artifactId>
+		<version>2.0.1</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/WebContent/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar</systemPath>
+	</dependency>
+
+
+	<dependency>
+		<groupId>json</groupId>
+		<artifactId>json</artifactId>
+		<version>20151123</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/WebContent/WEB-INF/lib/json-20151123.jar</systemPath>
+	</dependency>
+
+
+	<dependency>
+	<groupId>json-simple</groupId>
+	<artifactId>json-simple</artifactId>
+	<version>1.1</version>
+	<scope>system</scope>
+	<systemPath>${basedir}/WebContent/WEB-INF/lib/json-simple-1.1.jar</systemPath>
+	</dependency>
+
+
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>4.9b2</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/WebContent/WEB-INF/lib/junit-4.9b2.jar</systemPath>
+	</dependency>
+
+
+	<dependency>
+		<groupId>lo</groupId>
+		<artifactId>lo</artifactId>
+		<version>4j-1.2.15</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/WebContent/WEB-INF/lib/log4j-1.2.15.jar</systemPath>
+	</dependency>
+
+
+	<dependency>
+		<groupId>mongodb-driver</groupId>
+		<artifactId>mongodb-driver</artifactId>
+		<version>3.0.2</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/WebContent/WEB-INF/lib/mongodb-driver-3.0.2.jar</systemPath>
+	</dependency>
+
+
+	<dependency>
+		<groupId>mongodb-driver-core</groupId>
+		<artifactId>mongodb-driver-core</artifactId>
+		<version>3.0.2</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/WebContent/WEB-INF/lib/mongodb-driver-core-3.0.2.jar</systemPath>
+	</dependency>
+	
+	<dependency>
+		<groupId>mysql-connector-java</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.42</version>
+		<scope>system</scope>
+		<systemPath>${basedir}/WebContent/WEB-INF/lib/mysql-connector-java-5.1.42.jar</systemPath>
+	</dependency>
+
+</dependencies>
+</project>
