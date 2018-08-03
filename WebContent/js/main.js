@@ -20,7 +20,7 @@ app.controller(
 							$scope.loginForm.message = null;
 							var data = angular.fromJson($scope.loginForm);
 						
-							var responsePromise = $http.post("http://35.237.19.240:8080/LoginApplication/api/BuildAPI/Details" , data);
+							var responsePromise = $http.post("http://35.237.77.96:8080/LoginApplication/api/BuildAPI/Details" , data);
 						
 							
 							responsePromise
