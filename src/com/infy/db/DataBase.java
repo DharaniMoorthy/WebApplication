@@ -16,7 +16,7 @@ public class DataBase {
 			
 			Class.forName("com.mysql.jdbc.Driver");  
 			java.sql.Connection con=DriverManager.getConnection(  
-			"jdbc:mysql://10.123.126.130:3306/userdb","admin","admin");  
+			"jdbc:mysql://localhost:3306/userdb","admin","admin");  
 			//here sonoo is database name, root is username and password 
 			String sql = "Select * from usertable Where username='" + buildDetails.getUserName() + "' and password='" + buildDetails.getPassword() + "'";
 			Statement stmt=(Statement) con.createStatement();  
