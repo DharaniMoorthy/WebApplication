@@ -31,7 +31,7 @@
         </configuration>
       </plugin>
     </plugins>
-   <finalName>LoginApplication</finalName?
+	  <finalName>LoginApplication</finalName>
   </build>
   <dependencies xmlns="">
 
